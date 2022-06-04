@@ -1,6 +1,6 @@
 '''
 :Author: Tom Klopper. 
-:Goal: To create a simpel CNN using the functional keras API trained on the standard MNIST dataset. 
+:Goal: To create a simple CNN using the functional keras API trained on the standard MNIST dataset. 
 :Last update: 04-06-2022.
 '''
 
