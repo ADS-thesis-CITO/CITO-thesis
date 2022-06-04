@@ -7,7 +7,7 @@ The folder is split into three subfolders, each representing a different part of
 The scripts in this folder are concerned with retrieving and cleaning the data before classification. 
 This folder should contain the following scripts: 
 * 'extract_all_numbers.py' - A script to extract and save all individual numbers from given answers.
-* 'create_grids.py' (missing) - A script which creates a grid visualisation of (un)identifiable numbers.
+* 'create_grids.py' - A script which creates a grid visualisation of (un)identifiable numbers.
 
 ## Modelling 
 The scripts in this folder create all models used for classification. 
