@@ -1,7 +1,7 @@
 '''
 :Author:        Tom Klopper. 
 :Goal:          To analyse the succesfullness of preprocessing the data. 
-:Last updated:  09-06-2022. 
+:Last updated:  03-07-2022. 
 '''
 #%%
 # Import libraries.
@@ -163,7 +163,7 @@ for threshold_value in threshold_list :
     df['Positive_crop_count'] = positive_crops_per_test
     df['Number_of_found_questions'] = n_per_folder
     df['Number_of_mistakes'] = n_mistakes_per_test
-    df['Error_rate'] = 100 - ((df['Number_of_found_questions'] - df['Number_of_mistakes'])  / df['Number_of_found_questions']) *100
+    df['Error_rate'] = (df['Number_of_mistakes']  / df['Number_of_found_questions']) *100
 
     #print(df.head(10))
         
@@ -183,13 +183,13 @@ print(final_df.head(10))
 
 # Plot error visualisation across different thresholds. 
 plt.plot(final_df['Threshold_value'], final_df['Error_rate'], color = "black")
-plt.title("Error rate for different threshold values")
+#plt.title("Error rate for different threshold values")
 plt.xlabel("Threshold value")
 plt.ylabel("Error rate (in %)")
 plt.grid(which='major', color='#DDDDDD', linewidth=0.8)
 plt.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.5)
 plt.minorticks_on()
-#plt.savefig("optimal_threshold.jpg")
+plt.savefig("optimal_threshold.jpg")
 plt.show()
 
 # Add negative and positive averages to the threshold plot. 
@@ -227,4 +227,4 @@ fig.tight_layout()
 # Save and show figure. 
 plt.savefig("full_preprocessing_analysis.jpg")
 plt.show()
-
+#%%

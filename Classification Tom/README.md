@@ -1,26 +1,17 @@
 # Automatic grading of handwritten math tests using OCR
-The goal of this project is to grade handwritten math tests as accurately as possible using optical character recognition (or OCR). 
+The goal of this project is to grade handwritten math tests as accurately as possible using Concolutional neural networks. 
 
-## Data
-[ADD information about the used data.] 
 
 ## Output
-This folder contains all the outputs of running the scripts. The folder is split between two subfolders, and their corresponding content: 
+This folder contains all the outputs of running the scripts. This folder is non-essential for running the script. 
 
-###### Images
-* `modelname_architecture.jpg` 		- Images on the structure / architecture of the constructed models. 
-* `training_modelname.jpg` 			- Accuracy / Loss figure of the training process for each model. 
-* `(Un)Identified_number_grid.jpg`	- Grid visualizing some of the (un)identified numbers. 
-
-###### Models 
-* `modelname.json` 					- JSON file with the saved model.
-* `modelname.h5`					- h5 file containing the saved weights of the model. 
 
 ## Scripts 
-Additional information about the scripts can be found in the corresponding README file. 
+This folder contains all scripts which were used to create the final paper. 
+It should be noted that two of the four models were trained within the classification script. 
+The other two models were trained in seperate scripts and later important into the classification script. 
 
-## License 
-[ADD License]
+
 
 ## Contact 
-For any questions or remarks, please send an email to [ADD e-mail].
+For any questions or remarks, please send an email to t.s.klopper@students.uu.nl .
