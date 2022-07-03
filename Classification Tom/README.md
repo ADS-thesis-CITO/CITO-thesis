@@ -11,6 +11,7 @@ This folder contains all scripts which were used to create the final paper.
 It should be noted that two of the four models were trained within the classification script. 
 The other two models were trained in seperate scripts and later important into the classification script. 
 
+Scripts contain `#%%` which was used to visualise the results in VS code interactive window. 
 
 
 ## Contact 
